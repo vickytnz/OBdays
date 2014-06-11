@@ -36,6 +36,22 @@ body {
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+
+if(dd<10) {
+    dd='0'+dd
+} 
+
+if(mm<10) {
+    mm='0'+mm
+} 
+
+today = yyyy+'-'+dd+'-'+mm;
+document.write(today);
+
 var width = 960,
     height = 136,
     cellSize = 17; // cell size
