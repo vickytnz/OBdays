@@ -34,6 +34,8 @@ body {
 </style>
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
+
+
 <script>
 
 var today = new Date();
@@ -124,6 +126,12 @@ function monthPath(t0) {
 
 d3.select(self.frameElement).style("height", "2910px");
 
+</script>
+
+<script src="/datamaps.world.min.js"></script>
+<div id="container" style="position: relative; width: 500px; height: 300px;"></div>
+<script>
+    var map = new Datamap({element: document.getElementById('container')});
 </script>
 <p>Inspired by <a href="http://bl.ocks.org/mbostock/4063318">Blocks</a></p>
 </body>
