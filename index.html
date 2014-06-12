@@ -132,6 +132,14 @@ d3.select(self.frameElement).style("height", "2910px");
 <div id="container" style="position: relative; width: 500px; height: 300px;"></div>
 <script>
     var map = new Datamap({element: document.getElementById('container')});
+
+  d3.csv("nationality.csv", function(error, csv) {
+  dataset = data.map(function(d) { return [ +d["Nationality"]]; })
+});
+  
 </script>
+
+
+
 <p>Inspired by <a href="http://bl.ocks.org/mbostock/4063318">Blocks</a></p>
 </body>
